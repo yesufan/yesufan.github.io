@@ -286,7 +286,6 @@
 
 
 </div>
-    <a href="https://github.com/yesufan"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 	<a href="https://github.com/yesufan" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 	</header>
 
@@ -435,81 +434,16 @@
       
         
           
-            <h2 id="搭建我的个人博客-经验分享"><a href="#搭建我的个人博客-经验分享" class="headerlink" title="搭建我的个人博客-经验分享"></a>搭建我的个人博客-经验分享</h2><h4 id="博客搭建参考文章"><a href="#博客搭建参考文章" class="headerlink" title="博客搭建参考文章"></a>博客搭建参考文章</h4><p><a href="https://github.com/nieweidong/fetool" target="_blank" rel="noopener">https://github.com/nieweidong/fetool</a><br><a href="http://www.cnblogs.com/visugar/p/6821777.html#3897522最靠谱的一个" target="_blank" rel="noopener">http://www.cnblogs.com/visugar/p/6821777.html#3897522最靠谱的一个</a></p>
-<h4 id="官方文档："><a href="#官方文档：" class="headerlink" title="官方文档："></a>官方文档：</h4><p><a href="https://hexo.io/docs/configuration.html官方很详细" target="_blank" rel="noopener">https://hexo.io/docs/configuration.html官方很详细</a><br><a href="https://pages.github.com/gitpages的使用方法" target="_blank" rel="noopener">https://pages.github.com/gitpages的使用方法</a><br><a href="http://www.markdown.cn/markdown快速入门" target="_blank" rel="noopener">http://www.markdown.cn/markdown快速入门</a></p>
-<h2 id="一、前提环境nodejs、git"><a href="#一、前提环境nodejs、git" class="headerlink" title="一、前提环境nodejs、git"></a>一、前提环境nodejs、git</h2><p>检查是否安装了git及note如图所示：否则安装node及git</p>
-<p><img src="/2018/04/22/搭建我的个人博客-经验分享/1524368091119.png" alt=""></p>
-<p>​    </p>
-<p> 新建仓库yesufan.girhub.io,并将其克隆到本地桌面path:e:\github </p>
-<p><img src="/2018/04/22/搭建我的个人博客-经验分享/1524368282566.png" alt=""></p>
-<p> 博客项目hexo搭建</p>
-<h3 id="hexo-的安装"><a href="#hexo-的安装" class="headerlink" title="hexo 的安装"></a>hexo 的安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">   npm install -g hexo-cli          #全局安装框架heco</span><br><span class="line">   E:\gitHub\      #进入文件夹（hexo项目存放的文件夹）</span><br><span class="line">   hexo init blog  #初始化新建文件夹</span><br><span class="line">cd blog          #进入博客根目录下</span><br><span class="line">   hexo g          #生成静态目录到public目录</span><br><span class="line">   hexo s --debug  #只提供静态文件，并调试。</span><br><span class="line">hexo server     #启动本地服务器。默认情况下，这是http://localhost:4000/</span><br></pre></td></tr></table></figure>
-<p>打开浏览器:<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><h4 id="1-修改hosts文件翻墙，打开localhost-4000可看到搭建的博客网站"><a href="#1-修改hosts文件翻墙，打开localhost-4000可看到搭建的博客网站" class="headerlink" title="1.修改hosts文件翻墙，打开localhost:4000可看到搭建的博客网站"></a>1.修改hosts文件翻墙，打开localhost:4000可看到搭建的博客网站</h4><p>path:C:\Windows\System32\drivers\etc</p>
-<h4 id="2-安装deploy-git"><a href="#2-安装deploy-git" class="headerlink" title="2..安装deploy-git  "></a>2..安装deploy-git  <br></h4><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h4 id="3-config-yml的部署"><a href="#3-config-yml的部署" class="headerlink" title="3._config.yml的部署"></a>3._config.yml的部署</h4><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">deploy:</span></span><br><span class="line"><span class="function">  <span class="title">type</span>: <span class="title">git</span></span></span><br><span class="line"><span class="function">  <span class="title">repo</span>: <span class="title">https</span>://<span class="title">github.com</span>/<span class="title">yesufan</span>/<span class="title">yesufan.github.io.git</span></span></span><br><span class="line"><span class="function">  <span class="title">branch</span>: <span class="title">master</span></span></span><br><span class="line"><span class="function">        #<span class="title">github</span>: <span class="title">git</span>@<span class="title">github.com:yesufan</span>/<span class="title">yesufan.github.io.git</span>,<span class="title">master</span></span></span><br><span class="line"><span class="function">        #<span class="title">coding</span>: <span class="title">git</span>@<span class="title">git.coding.net:yesufan</span>/<span class="title">blob.git</span>,<span class="title">master</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="4-将hexo部署到github"><a href="#4-将hexo部署到github" class="headerlink" title="4.将hexo部署到github"></a>4.将hexo部署到github</h4><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #清理缓存文件（db.json）和生成的文件（public）</span><br><span class="line">hexo -g # 部署到git之前生成</span><br><span class="line">hexo deploy # 部署到</span><br></pre></td></tr></table></figure>
-<p>http方式：其中要输入用户及密码 ：yesufan  校园密码 <br>ssh的方法:<a href="http://www.cnblogs.com/visugar/p/6821777.html#3897522" target="_blank" rel="noopener">http://www.cnblogs.com/visugar/p/6821777.html#3897522</a><br>到此为止：在浏览器中输入<code>http://yourgithubname.github.io</code>就可以看到你的个人博客啦</p>
-<h4 id="5-主题更换"><a href="#5-主题更换" class="headerlink" title="5.主题更换"></a>5.主题更换</h4><p>主题地址：<a href="https://hexo.io/themes/可以选择其中一种" target="_blank" rel="noopener">https://hexo.io/themes/可以选择其中一种</a></p>
-<p>下载主题next:</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<p>配置blog/_config.yml的主题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-<p>如需要更新</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd themes/next</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
-<h4 id="6-美化next主题参考文章"><a href="#6-美化next主题参考文章" class="headerlink" title="6.美化next主题参考文章"></a>6.美化next主题<br>参考文章</h4><h4 id="https-blog-csdn-net-qq-33699981-article-details-72716951"><a href="#https-blog-csdn-net-qq-33699981-article-details-72716951" class="headerlink" title="https://blog.csdn.net/qq_33699981/article/details/72716951"></a><a href="https://blog.csdn.net/qq_33699981/article/details/72716951" target="_blank" rel="noopener">https://blog.csdn.net/qq_33699981/article/details/72716951</a></h4><h4 id="http-shenzekun-cn-hexo-E7-9A-84next-E4-B8-BB-E9-A2-98-E4-B8-AA-E6-80-A7-E5-8C-96-E9-85-8D-E7-BD-AE-E6-95-99-E7-A8-8B-html"><a href="#http-shenzekun-cn-hexo-E7-9A-84next-E4-B8-BB-E9-A2-98-E4-B8-AA-E6-80-A7-E5-8C-96-E9-85-8D-E7-BD-AE-E6-95-99-E7-A8-8B-html" class="headerlink" title="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html"></a><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="noopener">http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html</a></h4><p><a href="https://segmentfault.com/a/1190000009544924" target="_blank" rel="noopener">https://segmentfault.com/a/1190000009544924</a></p>
-<h2 id="二、常用命令"><a href="#二、常用命令" class="headerlink" title="二、常用命令"></a>二、常用命令</h2><h3 id="完整命令"><a href="#完整命令" class="headerlink" title="完整命令"></a>完整命令</h3><ol>
-<li>hexo new [layout] <title> 创建一篇新文章。如果没有layout提供，</title></li>
-<li>Hexo将使用default_layoutfrom _config.yml。如果title包含空格，请用引号将其包围。</li>
-<li>hexo generate 生成静态目录到public目录</li>
-<li>hexo server 开启预览访问端口（(默认端口4000，’ctrl+c’关闭server)</li>
-<li>hexo deploy # 项目部署</li>
-<li>hexo help # 查看帮助</li>
-<li>hexo version # 查看Hexo的版本</li>
-<li>hexo publish [layout] <filename></filename></li>
-<li>hexo list &lt; type &gt; #列出所有路线</li>
-<li>hexo migrate &lt; type &gt;#迁移其他博客系统的内容。</li>
-</ol>
-<h3 id="简写命令"><a href="#简写命令" class="headerlink" title="简写命令"></a>简写命令</h3><ul>
-<li><p>-d， –deploy    一代完成后部署</p>
-<p>-w， –watch    观看文件更改</p>
-<p> -b， –bail    如果在生成期间抛出任何未处理的异常，则引发错误</p>
-<p> -f， –force    强制再生</p>
-<p> -p， –port    覆盖默认端口</p>
-<p> -s， –static    只提供静态文件</p>
-<p> -l， –log    启用记录器。覆盖记录器格式。</p>
-<p> -g， –generate    在部署之前生成</p>
-</li>
-</ul>
-<h2 id="三、搭建网站遇到的坑"><a href="#三、搭建网站遇到的坑" class="headerlink" title="三、搭建网站遇到的坑"></a>三、搭建网站遇到的坑</h2><h3 id="1-hexo生成博文插入图片不显示"><a href="#1-hexo生成博文插入图片不显示" class="headerlink" title="1.hexo生成博文插入图片不显示"></a>1.hexo生成博文插入图片不显示</h3><h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></p>
-<p>在你的hexo目录下执行这样一句话<code>npm install hexo-asset-image --save</code>，这是下载安装一个可以上传本地图片的插件，来自dalao：<a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="noopener">dalao的git</a></p>
-<p>等待一小段时间后，再运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个<strong>同名的文件夹</strong></p>
-<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：</p>
-<p><code>![你想输入的替代文字](xxxx/图片名.jpg)</code></p>
-<h4 id="关键"><a href="#关键" class="headerlink" title="关键"></a>关键</h4><p>根目录下输入命令行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #将public下的文件删除</span><br><span class="line">hexo g #重新生成public文件</span><br><span class="line">hexo server #开启本地服务器</span><br></pre></td></tr></table></figure>
-<p>在E:\gitHub\blog\public\2018\04\22\搭建我的个人博客-经验分享文件下的index中应该是</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/2018/04/22/搭建我的个人博客-经验分享/1524368091119.png"</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-侧边栏图标的使用"><a href="#2-侧边栏图标的使用" class="headerlink" title="2.侧边栏图标的使用"></a>2.侧边栏图标的使用</h3><p>图标库：<a href="https://fontawesome.com/icons" target="_blank" rel="noopener">https://fontawesome.com/icons</a></p>
-<h3 id="3-使用git生成密钥时出现的问题："><a href="#3-使用git生成密钥时出现的问题：" class="headerlink" title="3.使用git生成密钥时出现的问题："></a>3.使用git生成密钥时出现的问题：</h3><p><img src="/2018/04/22/搭建我的个人博客-经验分享/1524469320024.png" alt=""></p>
-<p>参考：<a href="https://blog.csdn.net/just_a_dream_/article/details/79601204" target="_blank" rel="noopener">https://blog.csdn.net/just_a_dream_/article/details/79601204</a></p>
-<ol>
-<li><p>找到ssh-keygen.exe的路径<br></p>
-</li>
-<li><p>配置环境变量：属性–&gt;高级系统设置–&gt;环境变量–&gt;系统变量,找到Path变量，进行编辑，End到最后，输入分号，粘贴复制的ssh-keygen所在的路径，保存<br></p>
-</li>
-<li><p><strong>重新cmd，执行ssh-keygen</strong></p>
-<p>​</p>
-</li>
-</ol>
-<h3 id="4-部署到codingNet的pages服务的时候，发现静态资源都加载不到"><a href="#4-部署到codingNet的pages服务的时候，发现静态资源都加载不到" class="headerlink" title="4.部署到codingNet的pages服务的时候，发现静态资源都加载不到."></a>4.部署到codingNet的pages服务的时候，发现静态资源都加载不到.</h3><p>问题解决：原来你要打算用codingNet的pages服务部署你的博客的话，你创建项目的名字必须和用户名保持一致，不能自己随便自定义。我重新创建了一个和用户名一致的项目，部署到他的pages服务，访问正常</p>
-<p>部署到codeing及git  <a href="https://www.jianshu.com/p/934d4b501b18" target="_blank" rel="noopener">https://www.jianshu.com/p/934d4b501b18</a></p>
-<p>参考文章：<a href="https://blog.csdn.net/longzhiwuing/article/details/68065634" target="_blank" rel="noopener">https://blog.csdn.net/longzhiwuing/article/details/68065634</a></p>
-<ol>
-<li>​</li>
-</ol>
-
-          
+          搭建我的个人博客-经验分享博客搭建参考文章https://github.com/nieweidong/fetoolhttp://www.cnblogs.com/visugar/p/6821777.html#3897522最靠谱的一个
+官方文档：https://hexo.io/docs/configu
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/22/搭建我的个人博客-经验分享/#更多" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -651,17 +585,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/21/hello-world/#更多" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -834,12 +766,17 @@
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="http://weibo.com/your-user-name" target="_blank" title="微博"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                  <a href="https://www.jianshu.com/users/32fddbd5363b" target="_blank" title="jianshu"><i class="fa fa-fw fa-heartbeat"></i>jianshu</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="http://www.zhihu.com/people/yesufan" target="_blank" title="知乎"><i class="fa fa-fw fa-quora"></i>知乎</a>
+                  <a href="http://weibo.com/your-user-name" target="_blank" title="weibo"><i class="fa fa-fw fa-weibo"></i>weibo</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.zhihu.com/people/yesufan" target="_blank" title="zhihu"><i class="fa fa-fw fa-quora"></i>zhihu</a>
                   
                 </span>
               
